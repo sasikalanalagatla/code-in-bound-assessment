@@ -63,7 +63,7 @@ The application will start running on http://localhost:3000.
 **1. Create a Product**
 URL: /products
 # Method: POST
-Body:
+**Body**:
 json
 {
   "title": "Product Title",
@@ -111,7 +111,7 @@ URL: /products/update
 # Method: PUT
 **Query Parameters**:
 id: The ID of the product to update.
-Body:
+**Body**:
 json
 {
   "title": "Updated Title",
