@@ -60,10 +60,14 @@ npm run start
 The application will start running on http://localhost:3000.
 
 **API Endpoints**
+
 **1. Create a Product**
 URL: /products
+
 **Method**: POST
+
 **Body**:
+
 json
 {
   "title": "Product Title",
@@ -74,6 +78,7 @@ json
 }
 
 **Response**:
+
 json
 {
   "msg": "Product added successfully",
@@ -82,9 +87,13 @@ json
 }
 
 **2. Get All Products**
+
 URL: /products
+
 **Method** GET
+
 **Response**:
+
 json
 {
   "status": 200,
@@ -94,11 +103,17 @@ json
 }
 
 **3. Get a Single Product**
+
 URL: /products/getOne
+
 **Method**: GET
+
 **Query Parameters**:
+
 id: The ID of the product to fetch.
+
 **Response**:
+
 json
 {
   "status": 200,
@@ -107,11 +122,17 @@ json
 }
 
 **4. Update a Product**
+
 URL: /products/update
+
 **Method**: PUT
+
 **Query Parameters**:
+
 id: The ID of the product to update.
+
 **Body**:
+
 json
 {
   "title": "Updated Title",
@@ -121,6 +142,7 @@ json
   "status": "unavailable"
 }
 **Response**:
+
 json
 {
   "status": 200,
@@ -128,11 +150,17 @@ json
 }
 
 **5. Delete a Product**
+
 URL: /products/delete
+
 **Method**: DELETE
+
 **Query Parameters**:
+
 id: The ID of the product to delete.
+
 **Response**:
+
 json
 {
   "status": 200,
