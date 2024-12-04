@@ -69,21 +69,32 @@ URL: /products
 **Body**:
 
 json
-{
-  "title": "Product Title",
+
+{  "title": "Product Title",
+
   "category": "Category Name",
+  
   "subcategory": "Subcategory Name",
+  
   "description": "Product Description",
+  
   "status": "available"
+  
 }
+
 
 **Response**:
 
 json
+
 {
+
   "msg": "Product added successfully",
+  
   "status": 201,
+  
   "data": { ...product }
+
 }
 
 **2. Get All Products**
@@ -95,11 +106,17 @@ URL: /products
 **Response**:
 
 json
+
 {
+
   "status": 200,
+  
   "message": "Data fetched successfully",
+  
   "totalData": 10,
+  
   "result": [ ...products ]
+
 }
 
 **3. Get a Single Product**
@@ -115,10 +132,15 @@ id: The ID of the product to fetch.
 **Response**:
 
 json
+
 {
+
   "status": 200,
+  
   "message": "Product fetched successfully",
+  
   "result": { ...product }
+
 }
 
 **4. Update a Product**
@@ -134,12 +156,19 @@ id: The ID of the product to update.
 **Body**:
 
 json
+
 {
+
   "title": "Updated Title",
+  
   "category": "Updated Category",
+  
   "subcategory": "Updated Subcategory",
+  
   "description": "Updated Description",
+  
   "status": "unavailable"
+
 }
 **Response**:
 
@@ -162,9 +191,13 @@ id: The ID of the product to delete.
 **Response**:
 
 json
+
 {
+
   "status": 200,
+  
   "message": "Product deleted successfully"
+
 }
 
 # Validation
@@ -172,13 +205,21 @@ The application uses the class-validator library to ensure that the request data
 
 ## Example of Validation Errors
 json
+
 {
+
   "statusCode": 400,
+  
   "message": [
+  
     "Title should have at least 4 characters",
+    
     "Category is required"
+  
   ],
+  
   "error": "Bad Request"
+
 }
 
 # Error Handling
