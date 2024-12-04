@@ -62,7 +62,7 @@ The application will start running on http://localhost:3000.
 **API Endpoints**
 **1. Create a Product**
 URL: /products
-# Method: POST
+**Method**: POST
 **Body**:
 json
 {
@@ -83,7 +83,7 @@ json
 
 **2. Get All Products**
 URL: /products
-# Method: GET
+**Method** GET
 **Response**:
 json
 {
@@ -95,7 +95,7 @@ json
 
 **3. Get a Single Product**
 URL: /products/getOne
-# Method: GET
+**Method**: GET
 **Query Parameters**:
 id: The ID of the product to fetch.
 **Response**:
@@ -108,7 +108,7 @@ json
 
 **4. Update a Product**
 URL: /products/update
-# Method: PUT
+**Method**: PUT
 **Query Parameters**:
 id: The ID of the product to update.
 **Body**:
@@ -129,7 +129,7 @@ json
 
 **5. Delete a Product**
 URL: /products/delete
-# Method: DELETE
+**Method**: DELETE
 **Query Parameters**:
 id: The ID of the product to delete.
 **Response**:
